@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/tv_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Vui lòng gọi Ban THTT để được hỗ trợ và lấy địa chỉ truy cập mới" />
+
+    <EditText
+        android:id="@+id/edt_input_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lbl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Nhập địa chỉ URL" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_check_url"
+        style="@style/btnStylelemon_chiffon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edt_input_url"
+        android:layout_below="@+id/edt_input_url"
+        android:layout_marginTop="18dp"
+        android:text="Kiểm tra" />
+
+    <Button
+        android:id="@+id/btn_url_cancel"
+        style="@style/btnStylelemon_chiffon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_check_url"
+        android:layout_alignBottom="@+id/btn_check_url"
+        android:layout_alignLeft="@+id/edt_input_url"
+        android:text="  Hủy   " />
+
+    <Button
+        android:id="@+id/btn_url_ok"
+        style="@style/btnStylelemon_chiffon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_check_url"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Cập nhật" />
+
+</RelativeLayout>

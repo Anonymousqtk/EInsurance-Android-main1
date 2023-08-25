@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/before_survey_cell"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/deal_iphone5" >
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv21"
+        android:paddingLeft="5dp"
+        android:text="Biển kiểm soát: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF6600" />
+
+    <TextView
+        android:id="@+id/tvLicensePlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/tv11"
+        android:layout_toRightOf="@+id/tv11"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#800000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvLicensePlate"
+        android:paddingLeft="5dp"
+        android:text="Số ấn chỉ: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF6600" />
+
+    <TextView
+        android:id="@+id/tvSerialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/tv21"
+        android:layout_below="@+id/tv11"
+        android:layout_toRightOf="@+id/tv21"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#800000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvSerialNumber"
+        android:paddingLeft="5dp"
+        android:text="Số khung/số máy: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF6600" />
+
+    <TextView
+        android:id="@+id/tvVehicleNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/tv31"
+        android:layout_below="@+id/tv21"
+        android:layout_toRightOf="@+id/tv31"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#800000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvVehicleNumber"
+        android:paddingLeft="5dp"
+        android:text="Người liên hệ: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF6600"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/tv41"
+        android:layout_below="@+id/tv31"
+        android:layout_toRightOf="@+id/tv41"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCustomerName"
+        android:paddingLeft="5dp"
+        android:text="Số đơn BH: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF6600"/>
+
+    <TextView
+        android:id="@+id/tvPolicyInsurance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/tv42"
+        android:layout_below="@+id/tv41"
+        android:layout_toRightOf="@+id/tv42"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#800000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/deleteResumeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:maxWidth="150dp"
+        android:text="Xóa"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:width="150dp" />
+    
+    <Button
+        android:id="@+id/editResumeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="@+id/deleteResumeButton"
+        android:maxWidth="150dp"
+        android:text="Sửa"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:width="150dp" />
+
+</RelativeLayout>

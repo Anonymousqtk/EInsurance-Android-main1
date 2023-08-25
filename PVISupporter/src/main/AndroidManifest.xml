@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pvi.activities"
+    android:versionCode="20"
+    android:versionName="2.1">
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"
+        android:required="true"
+        android:requiredFeature="true"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PVI eInsurance"
+        android:theme="@style/AppTheme"
+        tools:replace="icon, label"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="nosensor"
+            android:exported="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.pvi.helpers.TimeService" />
+
+        <activity
+            android:name=".MenuActivity"
+            android:label="E-Insurance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarCalculationActivity"
+            android:label="Tính phí bảo hiểm theo biểu phí PVI"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".CarSelectionActivity"
+            android:label="Lựa chọn xe tính phí"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".PublicLiabilityActivity"
+            android:label="Lựa chọn xe tính phí TNDS"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".CarValuesActivity"
+            android:label="Kết quả tính phí"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Đăng nhập hệ thống báo phát sinh"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".SelectActionActivity"
+            android:label="Chọn thao tác"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".DetailInputActivity"
+            android:label="Nhập phát sinh ấn chỉ"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".SerialFindingActivity"
+            android:label="Sửa phát sinh ấn chỉ"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".SerialEditorActivity"
+            android:label="Thông tin ấn chỉ PS"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".SerialSeachingActivity"
+            android:label="Tra cứu ấn chỉ PS"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".DatePickerActivity"
+            android:label="Chọn: ngày/tháng/năm"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".UpdateSoapURLActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ListSerialActivity"
+            android:label="Thông tin ấn chỉ PS"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".UpdatePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".BeforeSurveyLoginActivity"
+            android:label="Đăng nhập hệ thống"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyActivity"
+            android:label="Lựa chọn thao tác"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyCreateActivity"
+            android:label="Tạo mới hồ sơ giám định điều kiện"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyListActivity"
+            android:label="Danh sách hồ sơ giám định điều kiện"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyDetailActivity"
+            android:label="Chi tiết ảnh giám định điều kiện"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyImageViewerActivity"
+            android:label="Xem ảnh điều kiện"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyOfflineMenu"
+            android:label="Chụp ngoại tuyến"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyOfflineList"
+            android:label="Danh sách hồ sơ ngoại tuyến"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyOfflineCreate"
+            android:label="Tạo mới hồ sơ ngoại tuyến"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveyImageOffline"
+            android:label="Chụp ảnh ngoại tuyến"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveySelectOfflineActivity"
+            android:label="Lựa chọn hồ sơ ngoại tuyến"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeSurveySearchActivity"
+            android:label="Tra cứu ảnh hồ sơ"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".BeforeShipSurveyActivity"
+            android:label="Tạo hồ sơ giám định tàu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RestrictionList"
+            android:label="@string/title_activity_restriction_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TraCuuGiaTriXeActivity"
+            android:label="@string/title_activity_value_car"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TradeActivity"
+            android:label="PVI QLCĐ"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LossHistoryActivity"
+            android:label="@string/title_activity_loss_history"/>
+    </application>
+
+</manifest>

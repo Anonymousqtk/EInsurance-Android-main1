@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Vui lòng thay đổi mật khẩu"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edt_newpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Nhập mật khẩu mới"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_comfimpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_newpass"
+        android:layout_below="@+id/edt_newpass"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Xác nhận lại"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_dongy"
+        style="@style/btnStylelemon_chiffon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edt_comfimpass"
+        android:layout_below="@+id/edt_comfimpass"
+        android:layout_marginTop="19dp"
+        android:text="Đồng ý" />
+
+    <Button
+        android:id="@+id/btn_thoat"
+        style="@style/btnStylelemon_chiffon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_dongy"
+        android:layout_alignLeft="@+id/edt_comfimpass"
+        android:text="Hủy" />
+
+</RelativeLayout>

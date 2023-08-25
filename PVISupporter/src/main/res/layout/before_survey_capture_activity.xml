@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <GridView
+        android:id="@+id/gridViewImage"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_weight="9.98"
+        android:background="@android:color/transparent"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="3dp"
+        android:stretchMode="columnWidth" >
+    </GridView>
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/lo_ChangeStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn_upload"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/upload_icon"
+                android:text="Upload" />
+
+            <Button
+                android:id="@+id/btn_anhoffline"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/from_offline"
+                android:text="Ảnh ngoại tuyến" />
+
+            <Button
+                android:id="@+id/btn_chup"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/photo"
+                android:text="Chụp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_err"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số ấn chỉ:"
+                android:textColor="#424433" />
+
+            <TextView
+                android:id="@+id/tv_seri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424433" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bks(SK):"
+                android:textColor="#424433" />
+
+            <TextView
+                android:id="@+id/tv_bks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424433" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại hình BH:"
+                android:textColor="#424433" />
+
+            <TextView
+                android:id="@+id/tv_lhbh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424433" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày PS: "
+                android:textColor="#424433" />
+
+            <TextView
+                android:id="@+id/tv_date_cre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424433" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điện thoại: "
+                android:textColor="#424433" />
+
+            <TextView
+                android:id="@+id/tv_dienthoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424433" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tình trạng phí:"
+                android:textColor="#424433" />
+
+            <TextView
+                android:id="@+id/tv_feeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424433" />
+            <Button
+                android:id="@+id/btn_getMonney"
+                style="@style/btnStylelemon_chiffon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyển đã thu phí"
+                android:textSize="14dp"
+                android:visibility="gone"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

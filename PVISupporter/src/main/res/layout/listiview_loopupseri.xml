@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEDBD"
+    android:divider="#424433"
+    android:dividerPadding="1dp"
+    android:orientation="vertical"
+    android:showDividers="beginning" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_header"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_lbl"
+            android:layout_width="164dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Kết quả tra cứu"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_back_loopup"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"
+            android:textColor="#424433" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_loopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#424433"
+        android:dividerHeight="2dp"
+        android:paddingLeft="5dp"
+        android:scrollbarStyle="insideOverlay" >
+
+    </ListView>
+
+</LinearLayout>

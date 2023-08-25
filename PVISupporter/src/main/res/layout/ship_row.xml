@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shipCreateCell"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ship_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Tên tàu: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shipName"
+            android:text="Tàu Hải Nam 01"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/business"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Số đăng ký: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shipCode"
+            android:text="EF1234ABC"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Ngày đầu đăng kiểm: "
+            android:id="@+id/firstDayRegistrationText"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstDayRegistration"
+            android:text="10/12/2015"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Ngày cuối đăng kiểm:"
+            android:id="@+id/lastDayRegistrationText"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastDayRegistration"
+            android:text="10/12/2016"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationInfo"
+        android:textSize="16sp"
+        android:maxLines="3"
+        android:text="Trung tâm đăng kiểm tàu thủy Hải Phòng"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Chocolate"/>
+</LinearLayout>

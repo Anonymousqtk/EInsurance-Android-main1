@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edt_seri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nhap_seri"
+        android:inputType="number"
+        android:maxLength="8" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_bks_sk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0,1,2,3,4,5,6,7,8,9,-.ABCDEFGHIJKLMNOPQRSTVUWXYZ"
+        android:ems="10"
+        android:hint="@string/nhap_bks_sk"
+        android:inputType="textCapCharacters"
+        android:maxLength="9" />
+
+    <CheckBox
+        android:id="@+id/chk_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lhbh_0" />
+
+    <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lhbh_1" />
+
+    <CheckBox
+        android:id="@+id/chk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lhbh_2" />
+
+    <CheckBox
+        android:id="@+id/chk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lhbh_3" />
+
+    <CheckBox
+        android:id="@+id/chk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lhbh_4" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tình trạng phí:"
+            android:textColor="#ca7c3c"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/typeUnitSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.31"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/btn_thoat0"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:text="@string/new_input" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:text="@string/edit1" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:text="@string/save1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</LinearLayout>

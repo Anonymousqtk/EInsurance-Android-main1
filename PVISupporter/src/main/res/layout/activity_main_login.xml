@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/tv_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Vui lòng đăng nhập"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edt_tk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/hint_tk"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edt_mk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_tk"
+        android:layout_alignRight="@+id/edt_tk"
+        android:layout_below="@+id/edt_tk"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/hint_mk"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/chk_luupass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_mk"
+        android:layout_below="@+id/edt_mk"
+        android:text="@string/chk_remember_pass" />
+
+    <Button
+        android:id="@+id/btn_dn"
+        style="@style/btnStylelemon_chiffon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_luupass"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.6"
+        android:text="@string/btn_dangnhap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_dn"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Crimson"
+        android:text="@string/forget_password"/>
+
+</RelativeLayout>

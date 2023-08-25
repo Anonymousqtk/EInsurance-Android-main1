@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">E-Insurance</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_dangnhap">Đăng nhập</string>
+    <string name="hint_tk">Số điện thoại</string>
+    <string name="hint_mk">Mật khẩu</string>
+    <string name="btn_nhapmoiseri">Nhập ấn chỉ phát sinh</string>
+    <string name="btn_tracuuseri">Sửa phát sinh ấn chỉ</string>
+    <string name="btn_tracuuthongtin">Tra cứu phát sinh AC</string>
+    <string name="btn_thoatmenu">Thoát</string>
+    <string name="chk_remember_pass">Ghi nhớ mật khẩu</string>
+    <string name="nhap_seri">Nhập ấn chỉ phát sinh</string>
+    <string name="nhap_bks_sk">Nhập BKS(SK)</string>
+    <string name="lhbh_0">0:Trách nhiệm dân sự bắt buộc</string>
+    <string name="lhbh_1">1:Trách nhiệm dân sự tự nguyện</string>
+    <string name="lhbh_2">2:Trách nhiệm dân sự đối với hàng hóa</string>
+    <string name="lhbh_3">3:Bảo hiểm người ngồi trên xe</string>
+    <string name="lhbh_4">4:Bảo hiểm vật chất xe ôtô</string>
+    <string name="save1">Lưu</string>
+    <string name="edit1">Sửa</string>
+    <string name="back">Quay lại</string>
+    <string name="new_input">Nhập mới</string>
+    <string name="lbl_vuilongnhapthongtin">Nhập thông tin Ấn chỉ</string>
+    <string name="money_amount">Chọn số tiền bảo hiểm</string>
+    <string name="type_insurance">Loại hình bảo hiểm</string>
+    <string name="group_car">Chọn nhóm loại xe</string>
+    <string name="sub_group_car">Chọn loại xe</string>
+    <string name="image_uploading">Đang tải ảnh lên&#8230;</string>
+    <string name="texGetTime">Đồng bộ giờ&#8230;</string>
+    <string name="Hint_create_offline_bks">Bắt buộc nhập</string>
+    <string name="sample_error_message">This is error text message. We use it to show at bottom of spinner field and you have two options to display. One single line and second is multiple line</string>
+    <string name="Hint_create_offline_seri">Tùy chọn</string>
+    <string name="btn_save_offline">Lưu</string>
+    <string name="claim_save_resume">Lưu hồ sơ&#8230;</string>
+    <string name="claim_get_login">Đăng nhập&#8230;</string>
+    <string name="claim_get_ship">Tìm thông tin tàu&#8230;</string>
+    <string name="title_activity_restriction_list">Tra cứu blacklist xe ôtô</string>
+    <string name="note_restriction_list"><u><i>Ghi chú:</i></u><i> Các xe ôtô bị hạn chế khai thác theo quy định của bảo hiểm PVI</i></string>
+    <string name="forget_password">"<u><i>Quên mật khẩu?</i></u>"</string>
+    <string name="title_activity_loss_history">Tra cứu tổn thất xe ôtô</string>
+    <string name="title_activity_value_car">Tra cứu giá trị xe</string>
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/logo_pvi" />
+    </LinearLayout>
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="10dp" >
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số ấn chỉ"
+                    android:textSize="15sp"
+                    android:textColor="#ca7c3c" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="15sp"
+                    android:textColor="#ee1515" />
+
+                <EditText
+                    android:id="@+id/serialNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="45dp"
+                    android:hint="Số ấn chỉ"
+                    android:inputType="number"
+                    android:maxLength="15"/>
+            </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:padding="5dp" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Số đơn BH"
+                 android:textSize="15sp"
+                 android:textColor="#ca7c3c" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text=" "
+                 android:textSize="15sp"
+                 android:textColor="#ee1515" />
+
+             <EditText
+                 android:id="@+id/policyInsurance"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="right"
+                 android:layout_marginLeft="38dp"
+                 android:hint="Số đơn BH"
+                 android:inputType="textCapCharacters"
+                 android:maxLength="50"/>
+         </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biển kiểm soát"
+                    android:textSize="15sp"
+                    android:textColor="#ca7c3c" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textSize="15sp"
+                    android:textColor="#ee1515" />
+
+                <EditText
+                    android:id="@+id/licensePlate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:digits="0123456789-ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:gravity="right"
+                    android:hint="30X-XXXXX"
+                    android:maxLength="15" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SK/SM"
+                    android:textSize="15sp"
+                    android:textColor="#ca7c3c" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textSize="15sp"
+                    android:textColor="#ee1515" />
+
+                <EditText
+                    android:id="@+id/vehicleNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58dp"
+                     android:digits="0123456789-ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:gravity="right"
+                    android:hint="XXXXXXXX"
+                    android:maxLength="50" />
+
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Người liên hệ"
+                    android:textSize="15sp"
+                    android:textColor="#ca7c3c"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/customerName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp"
+                    android:hint="NGUYỄN VĂN A"
+                    android:inputType="text"
+                    android:maxLength="60" />
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        <Button
+            android:id="@+id/btn_scan_qr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan QR code"
+            android:textColor="#800000"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_save_survey"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu hồ sơ"
+            android:textColor="#800000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    
+</RelativeLayout>

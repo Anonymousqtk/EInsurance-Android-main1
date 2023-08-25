@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TableLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="*">
+    <TableRow
+            android:id="@+id/tu_ngay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+            android:id="@+id/tv_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="Từ ngày"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_view_tungay"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_weight="0.45"
+            android:textSize="18dp" />
+        </TableRow>
+
+   	<TableRow
+   	    android:id="@+id/den_ngay"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:minHeight="50dp" >
+
+            <TextView
+            android:id="@+id/tv_dienthoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="Đến ngày"
+            android:textSize="16dp" />
+
+			<Button
+            android:id="@+id/btn_view_dn"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:textSize="18dp" />
+        </TableRow>
+
+    	<TableRow
+            android:id="@+id/dien_thoai1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điện thoại"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edt_phone_loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.10"
+            android:ems="10"
+            android:hint="Nhập số điện thoại"
+            android:inputType="phone" >
+
+            <requestFocus />
+        </EditText>
+        </TableRow>
+</TableLayout>
+
+    
+   		<TableRow
+            android:id="@+id/frame_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+           <Button
+            android:id="@+id/btn_back_"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:text="Quay lại"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_tracuu_seri"
+            style="@style/btnStylelemon_chiffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="Tra cứu"
+            android:textSize="18dp" />
+        </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.60"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:text="Kết quả tra cứu"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_sms_suss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:paddingTop="6dp"
+                android:text="Nhắn SMS thành công:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_kq_suss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:paddingRight="20dp"
+                android:paddingTop="7dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btn_ct_sms_suss"
+                style="@style/btnStylelemon_chiffon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:paddingTop="4dp"
+                android:text="Nhắn SMS lỗi:               "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_notsuss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:paddingRight="20dp"
+                android:paddingTop="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btn_loopup_notsussview"
+                style="@style/btnStylelemon_chiffon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:paddingTop="4dp"
+                android:text="Nhập PS thành công:   "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_inputsuss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:paddingRight="20dp"
+                android:paddingTop="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/inputsussviewbt"
+                style="@style/btnStylelemon_chiffon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết" />
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

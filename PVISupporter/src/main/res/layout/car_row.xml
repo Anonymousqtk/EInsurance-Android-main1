@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carBlacklistCell"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Biển kiểm soát: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lisencePlateCar"
+            android:text="30A-12689"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Tên khách: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customerNameCar"
+            android:text="Nguyễn Văn B"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Số ấn chỉ: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/serialCar"
+            android:text="12689"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Ngày đầu seri: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstDayCar"
+            android:text="10/10/1990"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Ngày cuối seri: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastDayCar"
+            android:text="10/10/1990"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Tỷ lệ bồi thường: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratioCar"
+            android:text="100 %"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleGroupCar"
+            android:textSize="20sp"
+            android:text="Nhóm blacklist: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/groupCar"
+            android:text="002"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleNoteField"
+            android:textSize="20sp"
+            android:text="Ghi chú: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Chocolate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteCar"
+            android:text="Do hiệp hội thông báo"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/AntiqueWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isBlacklist"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@color/Brown"/>
+    </LinearLayout>
+
+</LinearLayout>
